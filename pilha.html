@@ -1,0 +1,275 @@
+<!--
+@author André Zambroni Riedel, João Pedro Cunha Guska, Martin Ávila Buitrón, Samuel Damiani Frigotto
+@RA 2264900, 2264994, 2274183, 2266113
+@desc página de conversão mássica
+-->
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Tabela Periódica</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="index.html">Trabalho de Química</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Tabela Periódica</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="conversao.html">Conversão Mássica</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="pilha.html">Cálculo de Pilha</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-6">
+                    <form action="" id="form-pilha">
+                        <div class="form-row">
+                            <div class="form-group col-md-12">
+                                <h3>Equação 1</h3>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="radios1" value="reducao" checked>
+                                    <label class="form-check-label" for="reducao">
+                                        Equação de redução
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="radios1" value="oxidacao">
+                                    <label class="form-check-label" for="oxidacao">
+                                        Equação de oxidação
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group col-md-12">
+                                <div class="form-group">
+                                    <label for="selectEq1">Equação:</label>
+                                    <select name="selectEq1" id="select-eq-1" class="form-control">
+                                        <option value="1" selected>Li&#8314; (aq) + e&#8315; &#8644; Li (s)</option>
+                                        <option value="2">K&#8314; (aq) + e&#8315; &#8644; K (s)</option>
+                                        <option value="3">Ba&#178;&#8314; (aq) + 2e&#8315; &#8644; Ba (s)</option>
+                                        <option value="4">Sr&#178;&#8314; (aq) + 2e&#8315; &#8644; Sr (s)</option>
+                                        <option value="5">Ca&#178;&#8314; (aq) + 2e&#8315; &#8644; Ca (s)</option>
+                                        <option value="6">Na&#8314; (aq) + e&#8315; &#8644; Na (s)</option>
+                                        <option value="7">Mg&#178;&#8314; (aq) + 2e&#8315; &#8644; Mg (s)</option>
+                                        <option value="8">Be&#178;&#8314; (aq) + 2e&#8315; &#8644; Be (s)</option>
+                                        <option value="9">Al&#179;&#8314; (aq) + 3e&#8315; &#8644; Al (s)</option>
+                                        <option value="10">Mn&#178;&#8314; (aq) + 2e&#8315; &#8644; Mn (s)</option>
+                                        <option value="11">2H&#8322;O + 2e&#8315; &#8644; H&#8322; (g) + 2OH&#8315; (aq)</option>
+                                        <option value="12">Zn&#178;&#8314; (aq) + 2e&#8315; &#8644; Zn (s)</option>
+                                        <option value="13">Cr&#179;&#8314; (aq) + 3e&#8315; &#8644; Cr (s)</option>
+                                        <option value="14">Fe&#178;&#8314; (aq) + 2e&#8315; &#8644; Fe (s)</option>
+                                        <option value="15">Cd&#178;&#8314; (aq) + 2e&#8315; &#8644; Cd (s)</option>
+                                        <option value="16">PbSO&#8324; (s) + 2e&#8315; &#8644; Pb (s) + SO&#8324;&#178;&#8315; (aq)</option>
+                                        <option value="17">Co&#178;&#8314; (aq) + 2e&#8315; &#8644; Co (s)</option>
+                                        <option value="18">Ni&#178;&#8314; (aq) + 2e&#8315; &#8644; Ni (s)</option>
+                                        <option value="19">Sn&#178;&#8314; (aq) + 2e&#8315; &#8644; Sn (s)</option>
+                                        <option value="20">Pb&#178;&#8314; (aq) + 2e&#8315; &#8644; Pb (s)</option>
+                                        <option value="21">2H&#8314; (aq) + 2e&#8315; &#8644; H&#8322; (g)</option>
+                                        <option value="22">Sn&#8308;&#8314; (aq) + 2e&#8315; &#8644; Sn&#178;&#8314; (aq)</option>
+                                        <option value="23">Cu&#178;&#8314; (aq) + e&#8315; &#8644; Cu&#8314; (aq)</option>
+                                        <option value="24">SO&#8324;&#178;&#8315; (aq) + 4H&#8314; (aq) + 2e&#8315; &#8644; SO&#178; (g) +2H&#8322;O</option>
+                                        <option value="25">AgCl (s) + e&#8315; &#8644; Ag (s) + Cl&#8315; (aq)</option>
+                                        <option value="26">Cu&#178;&#8314; (aq) + 2e&#8315; &#8644; Cu (s)</option>
+                                        <option value="27">O&#178; (g) + 2H&#8322;O + 4e&#8315; &#8644; 4OH&#8315; (aq)</option>
+                                        <option value="28">I&#8322; (s) + 2e&#8315; &#8644; 2I&#8315; (aq)</option>
+                                        <option value="29">MnO&#8324;&#8315; (aq) + 2H&#8322;O + 3e&#8315; &#8644; MnO&#8322; (s) + 4OH&#8315; (aq)</option>
+                                        <option value="30">O&#8322; (g) + 2H&#8314; (aq) + 2e&#8315; &#8644; H&#8322;O&#8322; (aq)</option>
+                                        <option value="31">Fe&#179;&#8314; (aq) + e&#8315; &#8644; Fe&#178;&#8314; (aq)</option>
+                                        <option value="32">Ag&#8314; (aq) + e&#8315; &#8644; Ag (s)</option>
+                                        <option value="33">Hg&#8322;&#178;&#8314; (aq) + 2e&#8315; &#8644; 2Hg (l)</option>
+                                        <option value="34">2Hg&#178;&#8314; (aq) + 2e&#8315; &#8644; Hg&#8322;&#178;&#8314; (aq)</option>
+                                        <option value="35">NO&#8323;&#8315; (aq) + 4H&#8314; (aq) + 3e&#8315; &#8644; NO (g) + 2H&#8322;O</option>
+                                        <option value="36">Br&#8322; (l) + 2e&#8315; &#8644; 2Br&#8315; (aq)</option>
+                                        <option value="37">O&#8322; (g) + 4H&#8314; (aq) + 4e&#8315; &#8644; 2H&&#8322;O</option>
+                                        <option value="38">MnO&#8322; (s) + 4H&#8314; (aq) + 2e&#8315; &#8644; Mn&#178;&#8314; (aq) + 2H&#8322;O</option>
+                                        <option value="39">Cr&#8322;O&#8327;&#178;&#8315; (aq) + 14H&#8314; (aq) + 6e&#8315; &#8644; Cr&#179;&#8314; (aq) + 7H&#8322;O</option>
+                                        <option value="40">Cl&#8322; (g) + 2e&#8315; &#8644; 2Cl&#8315; (aq)</option>
+                                        <option value="41">Au&#179;&#8314; (aq) + 3e&#8315; &#8644; Au (s)</option>
+                                        <option value="42">MnO&#8324;&#8315; (aq) + 8H&#8314; (aq) + 5e&#8315; &#8644; Mn&#178;&#8314; (aq) + H&#8322;O</option>
+                                        <option value="43">Ce&#8308;&#8314; (aq) + e&#8315; &#8644; Ce&#179;&#8314; (aq) </option>
+                                        <option value="44">H&#8322;O&#8322; (aq) + 2H&#8314; (aq) + 2e&#8315; &#8644;2H&#8322;O</option>
+                                        <option value="45">Co&#179;&#8314; (aq) + e&#8315; &#8644; Co&#178;&#8314; (aq)</option>
+                                        <option value="46">O&#8323; (g) + 2H&#8314; (aq) + 2e&#8315; &#8644; O&#8322; (g) + H&#8322;O</option>
+                                        <option value="47">F&#8322; (g) + 2e&#8315; &#8644; 2F&#8315; (aq)</option>
+
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-row text-primary" id="eq-reducao-1"  style="display: flex;">
+                            <div class="col-md-6">
+                                <h3>Li&#8314; (aq) + e&#8315; &#8594; Li (s)</h3>
+                            </div>
+                            <div class="col-md-6">
+                                <h3>E°<sub>red</sub>: <span>-3.05</span> v</h3>
+                            </div>
+                        </div>
+
+                        <div class="form-row text-primary" id="eq-oxidacao-1" style="display: none;">
+                            <div class="col-md-6">
+                                <h3>Li (s) &#8594; Li&#8314; (aq) + e&#8315;</h3>
+                            </div>
+                            <div class="col-md-6">
+                                <h3>E°<sub>oxi</sub>: <span>3.05</span> v</h3>
+                            </div>
+                        </div>
+
+                        <hr>
+                        <!-- ----------------------------------------------------------------------- -->
+
+                        <div class="form-row">
+                            <div class="form-group col-md-12">
+                                <h3>Equação 2</h3>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="radios2" value="reducao" checked>
+                                    <label class="form-check-label" for="reducao">
+                                        Equação de redução
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="radios2" value="oxidacao">
+                                    <label class="form-check-label" for="oxidacao">
+                                        Equação de oxidação
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group col-md-12">
+                                <div class="form-group">
+                                    <label for="selectEq2">Equação:</label>
+                                    <select name="selectEq2" id="select-eq-2" class="form-control">
+                                        <option value="1">Li&#8314; (aq) + e&#8315; &#8644; Li (s)</option>
+                                        <option value="2" selected>K&#8314; (aq) + e&#8315; &#8644; K (s)</option>
+                                        <option value="3">Ba&#178;&#8314; (aq) + 2e&#8315; &#8644; Ba (s)</option>
+                                        <option value="4">Sr&#178;&#8314; (aq) + 2e&#8315; &#8644; Sr (s)</option>
+                                        <option value="5">Ca&#178;&#8314; (aq) + 2e&#8315; &#8644; Ca (s)</option>
+                                        <option value="6">Na&#8314; (aq) + e&#8315; &#8644; Na (s)</option>
+                                        <option value="7">Mg&#178;&#8314; (aq) + 2e&#8315; &#8644; Mg (s)</option>
+                                        <option value="8">Be&#178;&#8314; (aq) + 2e&#8315; &#8644; Be (s)</option>
+                                        <option value="9">Al&#179;&#8314; (aq) + 3e&#8315; &#8644; Al (s)</option>
+                                        <option value="10">Mn&#178;&#8314; (aq) + 2e&#8315; &#8644; Mn (s)</option>
+                                        <option value="11">2H&#8322;O + 2e&#8315; &#8644; H&#8322; (g) + 2OH&#8315; (aq)</option>
+                                        <option value="12">Zn&#178;&#8314; (aq) + 2e&#8315; &#8644; Zn (s)</option>
+                                        <option value="13">Cr&#179;&#8314; (aq) + 3e&#8315; &#8644; Cr (s)</option>
+                                        <option value="14">Fe&#178;&#8314; (aq) + 2e&#8315; &#8644; Fe (s)</option>
+                                        <option value="15">Cd&#178;&#8314; (aq) + 2e&#8315; &#8644; Cd (s)</option>
+                                        <option value="16">PbSO&#8324; (s) + 2e&#8315; &#8644; Pb (s) + SO&#8324;&#178;&#8315; (aq)</option>
+                                        <option value="17">Co&#178;&#8314; (aq) + 2e&#8315; &#8644; Co (s)</option>
+                                        <option value="18">Ni&#178;&#8314; (aq) + 2e&#8315; &#8644; Ni (s)</option>
+                                        <option value="19">Sn&#178;&#8314; (aq) + 2e&#8315; &#8644; Sn (s)</option>
+                                        <option value="20">Pb&#178;&#8314; (aq) + 2e&#8315; &#8644; Pb (s)</option>
+                                        <option value="21">2H&#8314; (aq) + 2e&#8315; &#8644; H&#8322; (g)</option>
+                                        <option value="22">Sn&#8308;&#8314; (aq) + 2e&#8315; &#8644; Sn&#178;&#8314; (aq)</option>
+                                        <option value="23">Cu&#178;&#8314; (aq) + e&#8315; &#8644; Cu&#8314; (aq)</option>
+                                        <option value="24">SO&#8324;&#178;&#8315; (aq) + 4H&#8314; (aq) + 2e&#8315; &#8644; SO&#178; (g) +2H&#8322;O</option>
+                                        <option value="25">AgCl (s) + e&#8315; &#8644; Ag (s) + Cl&#8315; (aq)</option>
+                                        <option value="26">Cu&#178;&#8314; (aq) + 2e&#8315; &#8644; Cu (s)</option>
+                                        <option value="27">O&#178; (g) + 2H&#8322;O + 4e&#8315; &#8644; 4OH&#8315; (aq)</option>
+                                        <option value="28">I&#8322; (s) + 2e&#8315; &#8644; 2I&#8315; (aq)</option>
+                                        <option value="29">MnO&#8324;&#8315; (aq) + 2H&#8322;O + 3e&#8315; &#8644; MnO&#8322; (s) + 4OH&#8315; (aq)</option>
+                                        <option value="30">O&#8322; (g) + 2H&#8314; (aq) + 2e&#8315; &#8644; H&#8322;O&#8322; (aq)</option>
+                                        <option value="31">Fe&#179;&#8314; (aq) + e&#8315; &#8644; Fe&#178;&#8314; (aq)</option>
+                                        <option value="32">Ag&#8314; (aq) + e&#8315; &#8644; Ag (s)</option>
+                                        <option value="33">Hg&#8322;&#178;&#8314; (aq) + 2e&#8315; &#8644; 2Hg (l)</option>
+                                        <option value="34">2Hg&#178;&#8314; (aq) + 2e&#8315; &#8644; Hg&#8322;&#178;&#8314; (aq)</option>
+                                        <option value="35">NO&#8323;&#8315; (aq) + 4H&#8314; (aq) + 3e&#8315; &#8644; NO (g) + 2H&#8322;O</option>
+                                        <option value="36">Br&#8322; (l) + 2e&#8315; &#8644; 2Br&#8315; (aq)</option>
+                                        <option value="37">O&#8322; (g) + 4H&#8314; (aq) + 4e&#8315; &#8644; 2H&&#8322;O</option>
+                                        <option value="38">MnO&#8322; (s) + 4H&#8314; (aq) + 2e&#8315; &#8644; Mn&#178;&#8314; (aq) + 2H&#8322;O</option>
+                                        <option value="39">Cr&#8322;O&#8327;&#178;&#8315; (aq) + 14H&#8314; (aq) + 6e&#8315; &#8644; Cr&#179;&#8314; (aq) + 7H&#8322;O</option>
+                                        <option value="40">Cl&#8322; (g) + 2e&#8315; &#8644; 2Cl&#8315; (aq)</option>
+                                        <option value="41">Au&#179;&#8314; (aq) + 3e&#8315; &#8644; Au (s)</option>
+                                        <option value="42">MnO&#8324;&#8315; (aq) + 8H&#8314; (aq) + 5e&#8315; &#8644; Mn&#178;&#8314; (aq) + H&#8322;O</option>
+                                        <option value="43">Ce&#8308;&#8314; (aq) + e&#8315; &#8644; Ce&#179;&#8314; (aq) </option>
+                                        <option value="44">H&#8322;O&#8322; (aq) + 2H&#8314; (aq) + 2e&#8315; &#8644;2H&#8322;O</option>
+                                        <option value="45">Co&#179;&#8314; (aq) + e&#8315; &#8644; Co&#178;&#8314; (aq)</option>
+                                        <option value="46">O&#8323; (g) + 2H&#8314; (aq) + 2e&#8315; &#8644; O&#8322; (g) + H&#8322;O</option>
+                                        <option value="47">F&#8322; (g) + 2e&#8315; &#8644; 2F&#8315; (aq)</option>
+
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-row text-primary" id="eq-reducao-2" style="display: flex;">
+                            <div class="col-md-6">
+                                <h3>K&#8314; (aq) + e&#8315; &#8594; K (s)</h3>
+                            </div>
+                            <div class="col-md-6">
+                                <h3>E°<sub>red</sub>: <span>-2.93</span> v</h3>
+                            </div>
+                        </div>
+
+                        <div class="form-row text-primary" id="eq-oxidacao-2" style="display: none;">
+                            <div class="col-md-6">
+                                <h3>K (s) &#8594; K&#8314; (aq) + e&#8315;</h3>
+                            </div>
+                            <div class="col-md-6">
+                                <h3>E°<sub>oxi</sub>: <span>2.93</span> v</h3>
+                            </div>
+                        </div>
+
+                        <hr>
+                        <!-- ----------------------------------------------------------------------- -->
+
+                        <div class="form-row">
+                            <div class="form-group col-md-12">
+                                <button type="submit" name="submit" class="btn btn-primary">Calcular</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="col-md-6">
+                    <h1>Diferença de Potencial (&#916;E°):</h1>
+                    <p class="text-primary resultado-final" id="diferencial">--</p>
+                    <hr>
+                    <h1>Ânodo:</h1>
+                    <p class="text-primary resultado-final" id="anodo">--</p>
+                    <hr>
+                    <h1>Cátodo:</h1>
+                    <p class="text-primary resultado-final" id="catodo">--</p>                    
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    <script src="scripts/ControllerPilha.js"></script>
+    <script>
+        var pilha = new ControllerPilha();
+    </script>
+</body>
+
+</html>
